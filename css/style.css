@@ -1,0 +1,247 @@
+/*Обнуление*/
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+/*--------------------*/
+html,
+body {
+	height: 100%;
+	line-height: 1;
+	font-size: 32px;
+	color: #000;
+	font-family: Roboto;
+}
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+}
+
+.page {
+	flex: 1 1 auto;
+}
+._container {
+	max-width: 1219px;
+	margin: 0 auto;
+	padding: 55px;
+	
+}
+/*-----HEADER----------------------------------------------------------*/
+.header {
+	background-color: #007765;
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+.header__container {
+	display: flex;
+	justify-content: space-between;
+	text-align: center;
+	align-items: center;
+
+}
+.menu__list {
+	display: flex;
+}
+.menu__list li {
+	margin-left: 16px;
+	color: white;
+	font-size: 24px;
+}
+.menu__list li a{
+	color: white;
+	font-size: 24px;
+}
+.menu__list li {
+	margin-left: 16px;
+
+}
+
+.menu__list li:first-child{
+	margin-left: 0;
+}
+
+
+/*-----PAGE------------------------------------------------------------*/
+
+/*&-----page__title-name---------------------------------------------*/
+.page__title-name {
+	background-image: url(/img/image-8.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-position: top;
+	background-size: cover;
+	padding-top: 155px;
+}
+
+.title-name__container h1 {
+	color: white;
+	font-size: 72px;
+	line-height: 84px;
+	font-weight: 500;
+	text-align: center;
+	margin: 155px 0px;
+}
+/*&-----page__problem-text---------------------------------------------*/
+.page__problem-text {
+	background-color: #EEEEEE;
+}
+.problem-text__title {
+	margin-top: 48px;
+	text-align: center;
+	font-size: 64px;
+	line-height: 75px;
+	font-weight: 500;
+	color: #007765;
+}
+.problem-text__text {
+		margin-top: 16px;
+}
+.problem-text__text p {
+	font-size: 32px;
+	line-height: 37px;
+	font-weight: 400;
+	margin-top: 50px;
+}
+.problem-text__text p:last-child {
+	padding-bottom: 42px;
+}
+/*&-----page__were-text------------------------------------------------*/
+.were-text {
+	background-image: url(/img/image-9.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.were-text p {
+	margin: 127px 0px;
+	color: white;
+	font-size: 48px;
+	line-height: 56px;
+	text-align: center;
+	line-height: 56px;	
+}
+/*&-----page__intro-text------------------------------------------------*/
+.intro-text__title {
+	margin-top: 48px;
+	font-size: 64px;
+	line-height: 75px;
+	text-align: center;
+	color: #007765;
+}
+.intro-text__text{
+	font-size: 32px;
+	line-height: 37px;
+	font-weight: 400;
+}
+.intro-text__logo-text {
+	display: flex;
+	margin-top: 16px;
+}
+.intro-text__text {
+	margin-left: 48px;
+}
+.intro-text__foot-text {
+	font-size: 32px;
+	line-height: 37px;
+	font-weight: 400;
+}
+.intro-text__foot-text p {
+	margin-top: 40px;
+}
+.intro-text__foot-text p:last-child {
+	padding-bottom: 92px;
+}
+/*&-----page__team team------------------------------------------------*/
+
+.page__team {
+	background-color: #EEEEEE;
+}
+.team__title {
+	margin-top: 58px;
+	font-size: 64px;
+	line-height: 75px;
+	text-align: center;
+	font-weight: 500;
+	color: #007765;
+}
+.team__person {
+	margin-top: 32px;
+	padding-bottom: 84px;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	min-height: 350px;
+	min-height: 283px;
+}
+.person__name {
+	margin-top: 12px;
+	font-size: 24px;
+	line-height: 28px;
+	color: #007765;
+	font-weight: 700;
+}
+.person__job-title {
+	font-size: 18px;
+	line-height: 21px;
+	font-style: italic;
+	font-weight: 400;
+}
+.team__people-block {
+	display: flex;
+	justify-content: space-between;
+	padding: 0 80px;
+	flex-wrap: wrap;
+}
+.team__people {
+	margin-top: 32px;
+}
+/*&-----footer----------------------------------------------------*/
+.footer__container {
+	max-width: 540px;
+	font-size: 18px;
+	line-height: 21px;
+	font-weight: 400;
+	color: white;
+	text-align: center;
+}
+.footer {
+	max-height: 176px;
+	max-width: 100%;
+	background-color: #333333;
+	
+
+}
